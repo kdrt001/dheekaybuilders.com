@@ -1559,16 +1559,138 @@ p {
 }
 
 .contact-info {
-    background: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-info::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(212, 168, 75, 0.05);
+    border-radius: 50%;
 }
 
 .contact-info h3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: var(--white);
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    position: relative;
 }
 
+.contact-info > p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9375rem;
+    margin-bottom: 35px;
+    line-height: 1.7;
+    position: relative;
+}
+
+/* Contact Details List */
+.contact-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.contact-details li {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-details li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.contact-details li > i {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: var(--primary-dark);
+    flex-shrink: 0;
+}
+
+.contact-details li > div h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 5px;
+}
+
+.contact-details li > div p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9375rem;
+    margin: 0;
+}
+
+.contact-details li > div a {
+    color: var(--secondary-color);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.contact-details li > div a:hover {
+    color: var(--secondary-light);
+    text-decoration: underline;
+}
+
+/* Contact Follow Section */
+.contact-follow-section {
+    margin-top: 35px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+}
+
+.contact-follow-section h4 {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact-follow-section .footer-social {
+    display: flex;
+    gap: 12px;
+}
+
+.contact-follow-section .footer-social a {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.contact-follow-section .footer-social a:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--primary-dark);
+    transform: translateY(-3px);
+}
+
+/* Legacy contact-info-item styles */
 .contact-info-item {
     display: flex;
     gap: 20px;
@@ -1630,11 +1752,13 @@ p {
 
 .contact-form {
     padding: 50px;
-    background: var(--light-gray);
+    background: var(--white);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .contact-form h3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: var(--primary-color);
     margin-bottom: 30px;
 }
