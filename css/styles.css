@@ -1808,24 +1808,76 @@ p {
 
 /* Map Section */
 .map-section {
-    height: 450px;
+    padding: var(--section-padding);
+    background: var(--white);
 }
 
-.map-section iframe {
+.map-container {
+    height: 450px;
+    box-shadow: var(--shadow);
+}
+
+.map-container iframe {
     width: 100%;
     height: 100%;
     border: none;
 }
 
-/* FAQ Section */
-.faq-section {
-    padding: var(--section-padding);
+/* Quick Contact Section */
+.quick-contact-section {
     background: var(--light-gray);
 }
 
+.quick-contact-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* FAQ Section - Styled like mission-vision cards */
+.faq-section {
+    padding: var(--section-padding);
+    background: var(--primary-color);
+}
+
+.faq-section .section-subtitle {
+    color: var(--secondary-color);
+}
+
+.faq-section .section-title {
+    color: var(--white);
+}
+
 .faq-grid {
-    max-width: 800px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: none;
+}
+
+.faq-card {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.faq-card h3 {
+    font-size: 1.125rem;
+    color: var(--white);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.faq-card h3 i {
+    color: var(--secondary-color);
+    margin-top: 3px;
+}
+
+.faq-card p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    margin: 0;
 }
 
 .faq-item {
