@@ -410,17 +410,17 @@ p {
     z-index: 1;
 }
 
-/* Hero slide backgrounds - Cagayan Valley Filipino inspired */
+/* Hero slide backgrounds - Filipino Construction & Philippine Designs */
 .hero-slide-1 {
-    background: url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1920&q=80') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80') center/cover no-repeat;
 }
 
 .hero-slide-2 {
-    background: url('https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=1920&q=80') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80') center/cover no-repeat;
 }
 
 .hero-slide-3 {
-    background: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1590650046871-92c887180603?w=1920&q=80') center/cover no-repeat;
 }
 
 .hero-content {
