@@ -199,9 +199,11 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.25; color: var(--text-
 .logo-img {
     height: 50px;
     width: 50px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 50%;
     border: 2px solid var(--accent);
+    background: var(--white);
+    padding: 3px;
 }
 
 .nav-menu {
@@ -1619,12 +1621,14 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.25; color: var(--text-
 }
 
 .footer-logo-img {
-    height: 50px;
-    width: 50px;
-    object-fit: cover;
+    height: 64px;
+    width: 64px;
+    object-fit: contain;
     border-radius: 50%;
     border: 2px solid var(--accent);
     flex-shrink: 0;
+    background: var(--white);
+    padding: 4px;
 }
 
 .footer-logo-text {
