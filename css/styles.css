@@ -1621,14 +1621,14 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; line-height: 1.25; color: var(--text-
 }
 
 .footer-logo-img {
-    height: 64px;
-    width: 64px;
+    height: 50px;
+    width: 50px;
     object-fit: contain;
     border-radius: 50%;
     border: 2px solid var(--accent);
     flex-shrink: 0;
     background: var(--white);
-    padding: 4px;
+    padding: 3px;
 }
 
 .footer-logo-text {
